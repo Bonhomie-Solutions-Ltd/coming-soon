@@ -15,11 +15,18 @@
             opacity: 1;
             animation: fadein 3s forwards;
         }
+        h1 {
+            color: white;
+        }
+        h3 {
+            color: #4d3dae;
+        }
         h2 {
             font-weight: 300;
             margin-bottom: 25px;
+            color: white;
         }
-        img {
+        #logo {
             width: 25%; /* Image width */
             border: 0; /* For IE */
         }
@@ -32,14 +39,14 @@
             width: 45%; /* Bar width */
             margin: 0 auto;
             border-radius: 10px; /* Roundness */
-            background-color: #a8a8a8; /* Background colour */
+            background-color: #232323; /* Background colour */
             padding: 7px 5px;
             /* border: 5px solid #a8a8a8; Border */
         }
         #fill {
             padding: 2px 0;
-            background-color: #00b98b; /* Fill colour */
-            width: 35%; /* Bar percentage, change text below also */
+            background-color: #4d3dae; /* Fill colour */
+            width: 40%; /* Bar percentage, change text below also */
             border-radius: 25px; /* Roundness */
             animation: proanimate 2s;
         }
@@ -70,19 +77,46 @@
                 margin: 1.1em;
                 font-size: 1.1em;
             }
+
             #progress {
                 width: 80%; /* Bar width */
             }
+
+        }
+
+        #social {
+            width: 30px;
+            margin-left: 15px; 
+            margin-right: 15px;
         }
     </style>
-    <title>Coming Soon</title>
+    <title>HomieBot | Coming Soon</title>
 </head>
-<body>
+<body background="background.jpg">
     <div id="main">
-        <img src="logo.png" alt="Logo Image">
-        <h1>Company Name</h1>
-        <h2>Our website is currently under construction. </h2>
-        <div id="progress"><div id="fill"><div id="barpercent"><h3>35%</h3></div></div></div>
+        <img src="logo.png" alt="HomieBot" id="logo">
+        <h3>making innovative tools to help society</h3>
+        <br>
+        <h2>Work in progress. Come back later!</h2>
+        <div id="progress">
+            <div id="fill">
+                <div id="barpercent">
+                    <h3>About 40% done</h3>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br>
+        <center footer="progress">
+            <p style="color: white;">Follow us on</p>
+            <a href="https://github.com/Bonhomie-Solutions-Ltd"><img id="social" src="github-30.png" alt="GitHub"></a>
+            <a href="mailto://support@homiebot.org.uk"><img id="social" src="email-30.png" alt="Email"></a>
+            <a href="https://discord.gg/AN5YTQXSjR"><img id="social" src="discord-30.png" alt="Discord"></a>
+            <!-- 
+            <a href="#"><img id="social" src="instagram-30.png" alt="Instagram"></a>
+            <a href="#"><img id="social" src="facebook-30.png" alt="Facebook"></a>
+            <a href="#"><img id="social" src="linkedin-30.png" alt="LinkedIn"></a>
+             -->
+        </center>
     </div>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </body>
