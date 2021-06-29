@@ -5,23 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <style>
-        body { 
-            margin: 0; padding: 0; 
-            background: url(background.png) no-repeat center center fixed; 
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
+        @font-face {
+          font-family: 'SFProText';
+          src: URL('SFProText.ttf') format('truetype');
         }
+
         html { height: 100%; cursor: default; }
+
         body {
-            font-family: "Roboto", sans-serif; /* Default font */
+            font-family: "SFProText", sans-serif; /* Default font */
             width: 100%; height: 100%;
             text-align: center;
             display: table;
             opacity: 1;
             animation: fadein 3s forwards;
+            margin: 0; padding: 0; 
+            background: url(background.png) no-repeat center center fixed; /* to prevent white border and start with normal wallpaper */
         }
+
+        .page-bg {
+            background: url(background.png) no-repeat center center fixed; 
+            -webkit-filter: blur(5px);
+            -moz-filter: blur(5px);
+            -o-filter: blur(5px);
+            -ms-filter: blur(5px);
+            filter: blur(5px);
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
         h1 {
             color: white;
         }
@@ -157,7 +173,7 @@ iAAAEYgAADGIAD/xiAA/8YgAP/GIAD/xj///8Y////GD///BwP//A/A//A/8D/A//wPA///AA///8A//
             <p style="color: white;">Get in touch</p>
             <a href="https://github.com/Bonhomie-Solutions-Ltd"><img id="social" src="github-30.png" alt="GitHub"></a>
             <a href="mailto://support@homiebot.org.uk"><img id="social" src="email-30.png" alt="Email"></a>
-            <a href="https://discord.gg/AN5YTQXSjR"><img id="social" src="discord-30.png" alt="Discord"></a>
+            <a href="https://discord.gg/Qu4nGXjB"><img id="social" src="discord-30.png" alt="Discord"></a>
             <!-- 
             <a href="#"><img id="social" src="instagram-30.png" alt="Instagram"></a>
             <a href="#"><img id="social" src="facebook-30.png" alt="Facebook"></a>
@@ -168,6 +184,7 @@ iAAAEYgAADGIAD/xiAA/8YgAP/GIAD/xj///8Y////GD///BwP//A/A//A/8D/A//wPA///AA///8A//
         <center>
             <a href="LICENSE.html"><p style="font-size: small;">Copyright © 2021 Bonhomie Solutions</p></a>
         </center>
+        <div class="page-bg"></div>
     </div>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </body>
